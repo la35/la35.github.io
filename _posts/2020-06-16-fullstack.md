@@ -10,4 +10,4 @@ Para mis alumnos de Proyecto Informático I y para el que le interese les dejo u
 Las guías van a estar en los README de cada repo donde van a poder encontrar el código terminado.
 El único requisito es entender un poco de HTML, CSS y JS (un poquito nada más).
 
-La primera ya está disponible en https://github.com/santiagotrini/express-hello-world.
+La primera ya está disponible en [santiagotrini/express-hello-world](https://github.com/santiagotrini/express-hello-world).
