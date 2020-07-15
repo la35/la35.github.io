@@ -4,7 +4,7 @@ title:  "Guías de desarrollo web full stack JS"
 author: "Santiago Trini"
 categories: mern
 tags: [js,mern,fullstack]
-image: mern.jpg
+image: mern.png
 date:   2020-06-16 02:17:00 -0300
 ---
 
