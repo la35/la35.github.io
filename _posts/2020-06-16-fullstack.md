@@ -36,7 +36,7 @@ La primera ya está disponible en [santiagotrini/express-hello-world](https://gi
 
 Cuando les pido ejecutar comandos en la terminal van a ver algo como esto.
 
-```
+```console
 $ mkdir hello-world
 $ cd hello-world
 $ npm init -y
@@ -59,7 +59,7 @@ const port = 3000;
 
 Verificar que NodeJS, npm y Git se puedan usar desde la terminal.
 
-```
+```console
 $ node -v
 v14.3.0
 $ npm -v
@@ -85,7 +85,7 @@ Lista de cosas antes de arrancar:
 
 Empezamos entonces, creamos una carpeta para nuestro proyecto. Nos vamos a esa carpeta y le decimos a Git que la trate como a un repositorio. También creamos el `package.json` con npm. Todo eso con los siguientes comandos.
 
-```
+```console
 $ mkdir express-hello-world
 $ cd express-hello-world
 $ git init
@@ -94,9 +94,9 @@ $ npm init -y
 
 ## Agregar Express y el .gitignore
 
-Ahora hacemos dos cosas, agregamos un archivo llamado `.gitignore` para que Git ignore la carpeta `node_modules`. Esa carpeta se crea cuando instalamos librerias con npm. En nuestro caso vamos a instalar Express (requiere Internet).
+Ahora hacemos dos cosas, agregamos un archivo llamado `.gitignore` para que Git ignore la carpeta `node_modules`. Esa carpeta se crea cuando instalamos librerías con npm. En nuestro caso vamos a instalar Express (requiere Internet).
 
-```
+```console
 $ echo node_modules > .gitignore
 $ npm install express
 ```
@@ -105,13 +105,13 @@ $ npm install express
 
 Creamos un archivo llamado `index.js`. En Linux:
 
-```
+```console
 $ touch index.js
 ```
 
 En Windows:
 
-```
+```console
 $ type nul > index.js
 ```
 
@@ -161,7 +161,7 @@ Abrimos el `package.json` y agregamos una propiedad llamada `start` a la parte d
 
 Para probar que todo funcione ejecutamos nuestra app en la terminal.
 
-```
+```console
 $ npm start
 ```
 
@@ -189,22 +189,22 @@ Tomamos nota del link del repo que nos muestra la siguiente pantalla, ese es el 
 
 De vuelta en la terminal hacemos lo siguiente en la carpeta del proyecto.
 
-```
+```console
 $ git remote add origin https://github.com/usuario/express-hello-world.git
 $ git add .
 $ git commit -m "primer commit"
 ```
 
-Si cuando ejecutan `git commit` les pregunta quienes son y no hace el commit configuren su nombre y mail con los siguientes comandos. Después de ejecutar los dos `git config` ejecuten devuelta el `git commit` porque la primera vez no lo procesó.
+Si cuando ejecutan `git commit` les pregunta quiénes son y no hace el commit configuren su nombre y mail con los siguientes comandos. Después de ejecutar los dos `git config` ejecuten devuelta el `git commit` porque la primera vez no lo procesó.
 
-```
+```console
 $ git config --global user.name "Nombre Apellido"
-$ git config --global user.mail "nombre@mail.com"
+$ git config --global user.email "nombre@mail.com"
 ```
 
 Por último suben el código a GitHub con `git push`
 
-```
+```console
 $ git push -u origin master
 ```
 
@@ -240,13 +240,13 @@ app.listen(port);
 
 Agregamos un archivo llamado `Procfile` con el texto `web: npm start` en la carpeta del proyecto.
 
-```
+```console
 $ echo web: npm start > Procfile
 ```
 
 Subimos estas modificaciones a nuestro repositorio en GitHub. A partir de ahora no hace falta usar `git push -u origin master`, con `git push` a secas alcanza.
 
-```
+```console
 $ git add .
 $ git commit -m "modificaciones para Heroku"
 $ git push
@@ -254,7 +254,7 @@ $ git push
 
 ## Creamos una app en Heroku
 
-Acá tenemos dos opciones, usar la CLI de Heroku o usar la interfaz web (el dashboard) que aparece cuando nos logeamos en la web de Heroku. Hasta el momento la única manera que conozco de linkear el repo de GitHub con Heroku es en la interfaz web así que vamos a [Heroku](https://heroku.com), nos logeamos y le damos al boton "new" en la esquina superior derecha para crear una app.
+Acá tenemos dos opciones, usar la CLI de Heroku o usar la interfaz web (el _dashboard_) que aparece cuando nos logeamos en la web de Heroku. Hasta el momento la única manera que conozco de linkear el repo de GitHub con Heroku es en la interfaz web así que vamos a [Heroku](https://heroku.com), nos logeamos y le damos al boton "new" en la esquina superior derecha para crear una app.
 
 ![Heroku new app](../assets/img/heroku-new-app.png)
 
@@ -307,7 +307,7 @@ app.listen(port);
 
 Agregamos una carpeta llamada `public` a nuestro proyecto y dentro de `public` un archivo `index.html`.
 
-```
+```console
 $ mkdir public
 $ cd public
 $ touch index.html
@@ -334,13 +334,13 @@ Agregamos algo de código en `index.html`.
 
 Listo, probamos que todo ande ejecutando el server.
 
-```
+```console
 $ npm start
 ```
 
 Y chequeamos que todo esté bien en `http://localhost:3000`. Si estamos conformes hacemos un _commit_ y un _push_ al remoto (GitHub).
 
-```
+```console
 $ git add .
 $ git commit -m "agrega index.html"
 $ git push
@@ -350,7 +350,7 @@ En un par de minutos se actualiza la app en Heroku y listo, podemos ver los camb
 
 ## Pero no necesito todo esto para poner algo de HTML en la web
 
-Más vale que no, les muestro una manera más fácil y rápida pero mejor lo leen en otro README. En este [repo](https://github.com/santiagotrini/hello-gh-pages) les muestro como poner online un sitio estático de una manera más fácil y rápida.
+Más vale que no, les muestro una manera más fácil y rápida, pero mejor lo leen en otro README. En este [repo](https://github.com/santiagotrini/hello-gh-pages) les muestro como poner online un sitio estático de una manera más fácil y rápida.
 
 Heroku está pensado para hostear todo tipo de aplicaciones web, GitHub Pages es una manera rápida de hostear sitios estáticos, mucho más limitados.
 
