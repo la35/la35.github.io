@@ -5,6 +5,9 @@ layout: default
 <h1>
   {{ page.title }}
 </h1>
+<div class="post-date">
+  por {{ page.author }}
+</div>
 
 {% if page.image %}
   <img src="{{ site.github.url }}/assets/img/{{ page.image }}">
@@ -14,8 +17,23 @@ layout: default
 
 <span class="post-date">
   {{ site.data.settings.post_date_prefix }}
-  {% assign d = page.date | date: "%-d"  %}
-  {{ page.date | date_to_long_string }}
+  {% assign m = page.date | date: "%-m"  %}
+  {{ page.date | date: "%-d de " }}
+  {% case m %}
+    {% when '1' %}Enero
+    {% when '2' %}Febrero
+    {% when '3' %}Marzo
+    {% when '4' %}Abril
+    {% when '5' %}Mayo
+    {% when '6' %}Junio
+    {% when '7' %}Julio
+    {% when '8' %}Agosto
+    {% when '9' %}Septiembre
+    {% when '10' %}Octubre
+    {% when '11' %}Noviembre
+    {% when '12' %}Diciembre
+  {% endcase %} de
+  {{ page.date | date: " %Y" }}
   por
   {% if page.author %}
     {{ page.author }}
