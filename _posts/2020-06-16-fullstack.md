@@ -175,17 +175,17 @@ A partir de acá por razones obvias necesitamos Internet.
 Primero nos vamos a [GitHub](https://github.com) y nos logeamos. Nos recibe un _dashboard_.
 Creamos un repositorio nuevo.
 
-![GitHub dashboard](../assets/img/fullstack/github-dashboard.png)
+![GitHub dashboard](../assets/img/fullstack/github-dashboard.png){:.zoom}
 
 Elegimos un nombre y lo demás lo dejamos por defecto.
 
-![Crear repo](../assets/img/fullstack/github-new-repo.png)
+![Crear repo](../assets/img/fullstack/github-new-repo.png){:.zoom}
 
 El de este ejemplo va a ser `usuario/express-hello-world`. En `usuario` cada uno va a tener su nombre de usuario por supuesto.
 
 Tomamos nota del link del repo que nos muestra la siguiente pantalla, ese es el que vamos a usar en el comando `git remote add origin`.
 
-![Importar repo desde CLI](../assets/img/fullstack/github-import-repo.png)
+![Importar repo desde CLI](../assets/img/fullstack/github-import-repo.png){:.zoom}
 
 De vuelta en la terminal hacemos lo siguiente en la carpeta del proyecto.
 
@@ -256,21 +256,21 @@ $ git push
 
 Acá tenemos dos opciones, usar la CLI de Heroku o usar la interfaz web (el _dashboard_) que aparece cuando nos logeamos en la web de Heroku. Hasta el momento la única manera que conozco de linkear el repo de GitHub con Heroku es en la interfaz web así que vamos a [Heroku](https://heroku.com), nos logeamos y le damos al boton "new" en la esquina superior derecha para crear una app.
 
-![Heroku new app](../assets/img/fullstack/heroku-new-app.png)
+![Heroku new app](../assets/img/fullstack/heroku-new-app.png){:.zoom}
 
 Elegimos un nombre y le damos al botón de crear app.
 
-![Heroku new app](../assets/img/fullstack/heroku-new-app-2.png)
+![Heroku new app](../assets/img/fullstack/heroku-new-app-2.png){:.zoom}
 
 ## Deploy automático desde GitHub
 
 Nos aparece un panel de control de la nueva app. En la pestaña de "Deploy", en la sección "Deployment method" elegimos GitHub y conectamos nuestra cuenta de GitHub a Heroku.
 
-![Heroku conectar GitHub](../assets/img/fullstack/heroku-github-sync.png)
+![Heroku conectar GitHub](../assets/img/fullstack/heroku-github-sync.png){:.zoom}
 
 Luego activamos los deploys automáticos desde GitHub y hacemos un deploy manual. Listo, la app está online. Usen el botón de "View" para ver como quedó. O en el navegador ponemos `https://express-hello-world-1729.herokuapp.com` (reemplazar por el nombre de su app).
 
-![Heroku deploys](../assets/img/fullstack/heroku-deploys.png)
+![Heroku deploys](../assets/img/fullstack/heroku-deploys.png){:.zoom}
 
 ## Probemos de mostrar algo de HTML desde la app
 
