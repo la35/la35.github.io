@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Hello docs"
+title:  "Hello React"
 author: "Santiago Trini"
 categories: mern
 tags: [js,mern,fullstack]
@@ -11,6 +11,10 @@ published: false
 
 # IDEA
 
-- Documentar la API de Hello CRUD
-- Usar JSDoc https://jsdoc.app
-- Usar jsdoc-http-plugin (npm package)
+- UI en React para el backend de hello-crud
+- Usar cards de Bootstrap para las notas (tipo Google Keep)
+- Usar Font Awesome para las acciones
+- Usar axios para las requests AJAX
+- Usar React Hooks
+- Usar create-react-app para bootstrapear el proyecto
+- Usar concurrently para dev y res.sendFile() para production

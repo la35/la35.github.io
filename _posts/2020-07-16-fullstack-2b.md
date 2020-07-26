@@ -2,8 +2,8 @@
 layout: post
 title:  "Hello postgre"
 author: "Santiago Trini"
-categories: mern
-tags: [js,mern,fullstack,postgre]
+categories: sql
+tags: [js,sql,fullstack,postgre]
 image: postgre.png
 date:   2020-07-16 00:55:00 -0300
 ---

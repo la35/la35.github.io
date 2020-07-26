@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Hello test"
+title:  "Hello docs"
 author: "Santiago Trini"
 categories: mern
 tags: [js,mern,fullstack]
@@ -11,8 +11,6 @@ published: false
 
 # IDEA
 
-- Testear la API de Hello CRUD
-- Jest y Supertest?
-- O Mocha y Chai?
-- https://zellwk.com/blog/endpoint-testing/
-- https://maximilianschmitt.me/posts/tutorial-rest-api-integration-testing-node-js/
+- Documentar la API de Hello CRUD
+- Usar JSDoc https://jsdoc.app
+- Usar jsdoc-http-plugin (npm package)
