@@ -81,7 +81,7 @@ Tal como hacemos en C es una convención indicar con la etiqueta `main:` la func
 
 ### Instrucciones
 
-Por último las instrucciones propiamente dichas del programa. En este sencillo programa _hello world_ usamos solo tres instrucciones distintas:
+Por último veamos las instrucciones propiamente dichas del programa. En este sencillo programa _hello world_ usamos solo tres instrucciones distintas:
 
 - _Load Immediate_ o `li`: carga una constante en un registro.
 - _Load Address_ o `la`: carga una dirección de memoria usando una etiqueta en un registro.
@@ -186,3 +186,7 @@ main:
   li        $v0, 10            # syscall exit code
   syscall                      # exit syscall
 ```
+
+Si copian este código a un archivo y lo abren en SPIM, al ejecutarlo pueden interactuar con la consola para ingresar los dos números. El programa no agrega nada que no haya aparecido en los dos ejemplos anteriores.
+
+Para terminar les dejo el link a la [_"Green Card"_](https://inst.eecs.berkeley.edu/~cs61c/resources/MIPS_Green_Sheet.pdf) de MIPS que sería el machete oficial para el programador de MIPS.
