@@ -189,4 +189,6 @@ main:
 
 Si copian este código a un archivo y lo abren en SPIM, al ejecutarlo pueden interactuar con la consola para ingresar los dos números. El programa no agrega nada que no haya aparecido en los dos ejemplos anteriores.
 
+Si prestaron atención al código de los tres ejemplos habrán notado la cantidad de comentarios (el `#` delimita comentarios). Esto es bastante común al programar en _assembler_ porque las instrucciones son bastante generales o crípticas. Traten de escribir un comentario para cada línea de código o corran el riesgo de no entender su propio código dentro de dos horas.
+
 Para terminar les dejo el link a la [_"Green Card"_](https://inst.eecs.berkeley.edu/~cs61c/resources/MIPS_Green_Sheet.pdf) de MIPS que sería el machete oficial para el programador de MIPS.
