@@ -5,8 +5,7 @@ author: "Santiago Trini"
 categories: orga
 tags: [mips,orga]
 image: mips-cpu.png
-date:   2020-08-13 21:00:00 -0300
-published: true
+date:   2020-08-13 18:00:00 -0300
 ---
 
 Una introducción a la programación en _assembler_ de MIPS usando SPIM. Todo el código disponible en [GitHub](https://github.com/santiagotrini/mips-intro).
