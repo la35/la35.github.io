@@ -16,6 +16,8 @@ Cuando programamos usando `if` o `while` en algún lenguaje de alto nivel como C
 
 La programación estructurada estableció que las estructuras de control básicas son tres. Secuencial, de selección e iterativas. La primera la vimos en el artículo anterior. El código se ejecuta secuencialmente desde la primer instrucción hasta la última tal como se lee. Las otras dos requieren una **decisión** entre tomar un camino u otro dentro del código. Es lo que hacemos con los condicionales y los ciclos: `if`, `while`, `switch`, `for`, etc.
 
+![estructuras](../assets/img/mips-branchs/structured-control.png){:.zoom}
+
 Cuando empezó a circular la idea de la programación estructurada hubo víctimas. Probablemente la víctima más famosa fue el enunciado `goto`. "Ir hacia" en español. Esta palabra clave que existe en C y muchos otros lenguajes de alto nivel pero que hoy en día nadie usa viene de la programación en _assembler_. Claro, en esa época todavía se hacía mucha programación en ensamblador y la idea era natural. Pero la programación estructurada desterró el enunciado `goto` considerándolo dañino.
 
 Es que en lenguaje ensamblador si uno quiere modificar el flujo de un programa, lo que hace es modificar el _program counter_. Cambiando el PC cambiamos la próxima instrucción que se va a ejecutar. El `goto` en los lenguajes de alto nivel es la contrapartida de dos tipos de instrucciones en ensamblador, los _jumps_ y los _branchs_. Saltos y ramificaciones.
