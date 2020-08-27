@@ -2,7 +2,7 @@
 
 Blog para alumnos de la ET Nº35. Apuntes, materiales y noticias para la especialidad computación más que nada.
 
-## Contribuciones
+# Contribuciones
 
 Si sos profe o alumno de la 35 y querés contribuir con un artículo los pasos son los siguientes.
 
