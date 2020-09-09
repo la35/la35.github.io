@@ -111,9 +111,9 @@ Los símbolos que empiezan con el signo `$` en el programa son registros. Hay 32
 |zero    |0              |Constante 0                   |
 |at      |1              |Reservado para el ensamblador |
 |v0 - v1 |2 - 3          |Resultados de funciones       |
-|a1 - a3 |4 - 7          |Argumentos de funciones       |
+|a0 - a3 |4 - 7          |Argumentos de funciones       |
 |t0 - t9 |8 - 15, 24, 25 |Registros temporarios         |
-|s0 - t7 |16 - 23        |Registros guardados           |
+|s0 - s7 |16 - 23        |Registros guardados           |
 |k0 - k1 |26 - 27        |Registros del _kernel_        |
 |gp      |28             |_Global pointer_              |
 |sp      |29             |_Stack pointer_               |

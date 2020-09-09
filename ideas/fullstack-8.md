@@ -17,4 +17,4 @@ published: false
 - Usar axios para las requests AJAX
 - Usar React Hooks
 - Usar create-react-app para bootstrapear el proyecto
-- Usar concurrently para dev y res.sendFile() para production
+- Usar concurrently para dev y express.static para production
