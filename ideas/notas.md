@@ -2,9 +2,11 @@
 
 ## Otros
 
-1. Hello GitHub Pages
+1. Hello GitHub Pages :ballot_box_with_check:
 2. Hello IoT
 3. La 35 Games
+4. Que es un algoritmo
+5. Processing
 
 ## Fullstack JS
 
@@ -16,7 +18,7 @@
 6. Express CRUD :ballot_box_with_check:
 7. Hello WebSockets :ballot_box_with_check:
 8. Hello Postgre :ballot_box_with_check:
-9. Hello React
+9. Hello React :ballot_box_with_check:
 10. Hello docs
 11. Hello tests
 12. ESLint
