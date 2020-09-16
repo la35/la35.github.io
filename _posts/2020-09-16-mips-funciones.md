@@ -281,20 +281,33 @@ jr          $ra             # return
 
 El _stack frame_ de la función `argumentos`, suponiendo que el _stack pointer_ tuviera el valor de 0x7ffffffc al iniciar el programa sería el siguiente. Noten que estamos guardando `$s0`, `$s1` y `$s2` aunque no pasaría nada si no lo hacemos, pero habíamos acordado en nuestra convención de llamada que el _callee_ siempre tiene que preservar los _saved registers_ si los utiliza.
 
-```
-0x7ffffffc
-0x7ffffff8 -->  s2     <-- $sp + 28
-0x7ffffff4 -->  s1     <-- $sp + 24
-0x7ffffff0 -->  s0     <-- $sp + 20
-0x7fffffec -->  arg 5  <-- $sp + 16
-0x7fffffe8 -->  vacío
-0x7fffffe4 -->  vacío
-0x7fffffe0 -->  vacío  
-0x7fffffdc -->  vacío  <-- $sp
-```
+![stack frame](../assets/img/mips-funciones/stack-frame-2.png){:.zoom}
 
 ## Funciones que llaman a otras funciones
 
-Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+El caso más interesante para entender como funciona la pila de llamadas y los _stack frames_ es el caso de una **función no hoja** (_non leaf function_). Reciben ese nombre porque si uno dibuja un árbol donde el tronco es la función `main` y cada llamada a una función abre una nueva rama, las hojas del árbol son las funciones que no llaman a ninguna otra función.
 
-Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+Un caso especial de estas funciones que llaman a otras funciones son las funciones recursivas, que se llaman a sí mismas. Todas las funciones que llamen a otras funciones son _callee_ y _caller_ al mismo tiempo, y siempre deben preservar en el _stack_ el _return address_, porque al llamar una función con `jal` estamos sobreescribiendo el valor previo de `$ra`.
+
+Como ejemplo podemos usar una función que calcula el enésimo número de Fibonacci. Por ejemplo si llamamos `fibonacci(0)` el resultado es 0. Para `fibonacci(10)` el resultado es 55.
+
+Implementar esta función en C de manera recursiva es muy sencillo.
+
+```c
+#include <stdio.h>
+
+int fibonacci(int n) {
+  if (n == 0 || n == 1)
+    return n;
+  else
+    return fibonacci(n - 1) + fibonacci(n - 2);  
+}
+
+int main() {
+  for (int n = 0; n < 10; n++)
+    printf("%d\n",fibonacci(n));
+  return 0;  
+}
+```
+
+Para traducir esta función a MIPS tenemos que tener cuidado de salvar el _return address_ y cualquier otro registro que necesitemos antes de llamar a `fibonacci(n - 1)` y `fibonacci(n - 2)`. Cada llamada tendrá su _stack frame_ en la pila.
