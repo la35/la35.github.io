@@ -279,7 +279,7 @@ addi        $sp, $sp, 32    # liberar espacio
 jr          $ra             # return
 ```
 
-El _stack frame_ de la función `argumentos`, suponiendo que el _stack pointer_ tuviera el valor de 0x7ffffffc al iniciar el programa sería el siguiente. Noten que estamos guardando `$s0`, `$s1` y `$s2` aunque no pasaría nada si no lo hacemos, pero habíamos acordado en nuestra convención de llamada que el _callee_ siempre tiene que preservar los _saved registers_ si los utiliza.
+El _stack frame_ de la función `argumentos`, suponiendo que el _stack pointer_ tuviera el valor de `0x7ffffffc` al iniciar el programa sería el siguiente. Noten que estamos guardando `$s0`, `$s1` y `$s2` aunque no pasaría nada si no lo hacemos, pero habíamos acordado en nuestra convención de llamada que el _callee_ siempre tiene que preservar los _saved registers_ si los utiliza.
 
 ![stack frame](../assets/img/mips-funciones/stack-frame-2.png){:.zoom}
 
@@ -368,3 +368,11 @@ jr          $ra             # return
 ```
 
 Noten que cada vez que llamamos a `fibonacci(n)` empujamos un _stack frame_ encima de los anteriores moviendo el _stack pointer_. Cada vez que volvemos de la función quitamos de la pila el último _stack frame_ y movemos el `$sp`.
+
+Cabe destacar que cuando en el epílogo guardamos `$a0` la función lo hace porque es el _caller_ y tiene que sobreescribirlo para llamar a `fibonacci(n - 1)` y `fibonacci(n - 2)`. En cambio cuando guarda `$ra` y los registros `$s0`, `$s1` y `$s2` lo hace desde el lugar del _callee_.
+
+![call-graph](../assets/img/mips-funciones/call-graph.png){:.zoom}
+
+La imagen de arriba ilustra el árbol de llamadas de `fibonacci(4)` donde se puede ver claramente la diferencia entre los casos de funciones o subrutinas _leaf_ y _non leaf_. En rojo aparecen los valores de retorno de cada llamada.
+
+Este código podría mejorarse bastante para evitar lo más posible el _register spilling_ en la pila. Por ejemplo en los casos base de la función no necesitamos preservar `$ra`. Esas optimizaciones se las dejo como tarea a ustedes.
