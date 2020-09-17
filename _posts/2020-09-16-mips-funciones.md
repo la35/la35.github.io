@@ -162,7 +162,7 @@ Bueno, el problema es que cuando `main` llama a `cuenta` todavía necesita traba
 
 Cuando nuestro código necesita preservar el valor de algún registro decimos que tenemos que volcar el registro en memoria. Esto es lo que se conoce en inglés como _register spilling_. En el contexto de una llamada a una función el lugar de la memoria donde volcamos registros y en general guardamos cualquier cosa relacionada a una función es en la **pila de llamadas**, conocida también como _call stack_ o simplemente _stack_.
 
-En MIPS el _stack_ empieza en la dirección 0x7ffffffc y crece hacia abajo por razones históricas. Para manipular el _stack_ podemos usar el registro `$sp` o _stack pointer_ que apunta justamente al último elemento en la pila, que es el que está en la "cima".
+En MIPS el _stack_ empieza en la dirección `0x7ffffffc` y crece hacia abajo por razones históricas. Para manipular el _stack_ podemos usar el registro `$sp` o _stack pointer_ que apunta justamente al último elemento en la pila, que es el que está en la "cima".
 
 Entonces para traducir correctamente el último programa a MIPS tenemos que volcar el registro `$s0` a la pila para preservar su valor. ¿Pero en qué parte del código hacemos esto? La convención de llamada para MIPS dice que los registros `$s0` a `$s7`, el `$sp` y el `$ra` deben ser preservados a través de llamadas a funciones. En cambio los registros temporarios (`$t0` a `$t9`), los registros de argumentos y valores de retorno no deben ser preservados.
 
@@ -304,10 +304,67 @@ int fibonacci(int n) {
 }
 
 int main() {
-  for (int n = 0; n < 10; n++)
-    printf("%d\n",fibonacci(n));
+  printf("%d\n",fibonacci(10));
   return 0;  
 }
 ```
 
 Para traducir esta función a MIPS tenemos que tener cuidado de salvar el _return address_ y cualquier otro registro que necesitemos antes de llamar a `fibonacci(n - 1)` y `fibonacci(n - 2)`. Cada llamada tendrá su _stack frame_ en la pila.
+
+```
+.text
+.globl main
+
+main:
+li          $a0, 10         # n = 10
+jal         fibonacci       # fibonacci(n)
+move        $a0, $v0        # copio el resultado
+li          $v0, 1          #
+syscall                     # print resultado
+li          $v0, 10         #
+syscall                     # exit
+
+fibonacci:
+                            # prologo
+addi        $sp, $sp, -20   # 5 words para el stack frame
+sw          $a0, 0($sp)     # guardar a0
+sw          $s0, 4($sp)     # guardar s0
+sw          $s1, 8($sp)     # guardar s1
+sw          $s2, 12($sp)    # guardar s2
+sw          $ra, 16($sp)    # guardar ra
+                            # fin prologo
+
+li          $s0, 1          # s0 = 1 (para el beq)
+
+beq         $a0, $zero, f0  # if (n == 0)
+beq         $a0, $s0, f1    # if (n == 1)
+
+addi        $a0, $a0, -1    # n - 1
+jal         fibonacci       #
+move        $s1, $v0        # s1 = fibonacci(n - 1)
+addi        $a0, $a0, -1    # ya le habiamos restado 1 antes
+jal         fibonacci       #
+move        $s2, $v0        # s2 = fibonacci(n - 2)
+add         $v0, $s1, $s2   # return s1 + s2
+j           return          # vamos a return
+
+f0:                         # caso base fibonacci(0)
+li          $v0, 0          # return 0
+j           return          #
+f1:                         # caso base fibonacci(1)
+li          $v0, 1          # return 1
+j           return          #
+
+return:
+                            # epilogo
+lw          $a0, 0($sp)     # recuperar a0
+lw          $s0, 4($sp)     # recuperar s0
+lw          $s1, 8($sp)     # recuperar s1
+lw          $s2, 12($sp)    # recuperar s2
+lw          $ra, 16($sp)    # recuperar ra
+addi        $sp, $sp, 20    # pop stack frame
+                            # fin epilogo
+jr          $ra             # return
+```
+
+Noten que cada vez que llamamos a `fibonacci(n)` empujamos un _stack frame_ encima de los anteriores moviendo el _stack pointer_. Cada vez que volvemos de la función quitamos de la pila el último _stack frame_ y movemos el `$sp`.
