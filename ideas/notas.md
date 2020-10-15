@@ -4,9 +4,10 @@
 
 1. Hello GitHub Pages :ballot_box_with_check:
 2. Hello IoT
-3. La 35 Games
-4. Que es un algoritmo
-5. Processing
+3. Que es un algoritmo
+4. Processing y p5js
+5. Logica digital y compuertas
+6. Proyecto toma relay IoT MQTT
 
 ## Fullstack JS
 
@@ -23,6 +24,7 @@
 11. Hello tests
 12. ESLint
 13. Ninja code (traduccion)
+14. React Native
 
 
 ## Project Management
@@ -40,7 +42,7 @@
 
 1. Intro (assembler) :ballot_box_with_check:
 2. Condicionales y loops (assembler) :ballot_box_with_check:
-3. Funciones (assembler)
+3. Funciones (assembler) :ballot_box_with_check:
 4. Codificacion de instrucciones
 5. Datapath
 6. Pipelined datapath
@@ -49,3 +51,4 @@
 ## TOY-8
 
 1. Emulador de TOY-8 :ballot_box_with_check:
+2. Terminar el emulador
