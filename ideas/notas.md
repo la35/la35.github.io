@@ -43,7 +43,7 @@
 1. Intro (assembler) :ballot_box_with_check:
 2. Condicionales y loops (assembler) :ballot_box_with_check:
 3. Funciones (assembler) :ballot_box_with_check:
-4. Codificacion de instrucciones
+4. Codificacion de instrucciones :ballot_box_with_check:
 5. Datapath
 6. Pipelined datapath
 7. Control
