@@ -56,4 +56,12 @@ En el diagrama de arriba se aprecian varios multiplexores. Estos están ahí por
 
 El problema se presenta cuando yo quiero que dos señales potencialmente diferentes vayan a la misma entrada. Por ejemplo para un `add` como dijimos queremos que el resultado vaya a la entrada etiquetada como _Write data_ en el archivo de registros. Pero para un `lw` necesitamos que _Write data_ en el archivo de registros reciba la salida _Read data_ de la memoria de datos. Seguramente estos dos buses de 32 bits llevan distintas secuencias de unos y ceros. ¿Qué es lo que va a ver el archivo de registros en _Write data_ si estas señales llegan las dos juntas al mismo tiempo?
 
-Para evitar esto usamos multiplexores en estos casos, y la unidad de control elige con estos multiplexores cuál señal pasa y cuál se queda.
+Para evitar esto usamos multiplexores en estos casos, y la unidad de control elige con estos multiplexores cuál señal pasa y cuál se queda. Existen tres casos, en el que mencionamos arriba usamos la señal `MemToReg`. El segundo caso para diferenciar entre una instrucción de tipo I y una de tipo R con `RegDst`. Y el tercero para elegir el segundo operando de la ALU, entre un registro o una constante o valor inmediato con `ALUSrc`.
+
+## La próxima instrucción
+
+Para la gran mayoría de las instrucciones de MIPS el PC tiene que incrementar en cuatro su valor para apuntar a la próxima instrucción del programa. Para eso está el sumador que está arriba a la izquierda. Este sumador tiene como entradas el valor actual del PC y el número cuatro.
+
+Pero para las instrucciones `beq` y `j` el valor del PC tiene que ser distinto. En el caso de `beq` solo si los dos registros que se comparan son iguales hay que sumar al PC el valor de los primeros 16 bits de la instrucción extendidos a 32 bits y desplazados 2 bits a la izquierda. Eso es lo que se ve en la esquina superior derecha del diagrama.
+
+El caso de _jump_ no aparece en el diagrama de arriba pero si está implementado en el circuito de Logisim. El cálculo de la dirección es un poco más complicado en este caso. Lo que la CPU hace es usar los primeros 26 bits de la instrucción, desplazarlo dos bits a la izquierda para obtener 28 bits y concatenarlo con los últimos 4 bits del PC para obtener una dirección de 32 bits.
