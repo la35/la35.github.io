@@ -2,6 +2,7 @@
 layout: post
 title:  "Guías de desarrollo web full stack JS"
 author: "Santiago Trini"
+subject: Proyecto Informático I
 categories: mern
 tags: [js,mern,fullstack]
 image: mern.png

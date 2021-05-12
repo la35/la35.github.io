@@ -2,6 +2,7 @@
 layout: post
 title:  "MIPS: funciones"
 author: "Santiago Trini"
+subject: Organización de Computadoras
 categories: orga
 tags: [mips,orga]
 image: functions.png

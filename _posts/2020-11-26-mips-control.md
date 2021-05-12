@@ -2,6 +2,7 @@
 layout: post
 title:  "MIPS: control"
 author: "Santiago Trini"
+subject: Organización de Computadoras
 categories: orga
 tags: [mips,cpu]
 image: control.png

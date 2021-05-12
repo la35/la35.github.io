@@ -2,6 +2,7 @@
 layout: post
 title:  "JavaScript en 30 minutos"
 author: "Santiago Trini"
+subject: Proyecto Informático I
 categories: js
 tags: [js]
 image: javascript.png

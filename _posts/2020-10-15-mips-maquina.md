@@ -2,6 +2,7 @@
 layout: post
 title:  "MIPS: código máquina"
 author: "Santiago Trini"
+subject: Organización de Computadoras
 categories: orga
 tags: [mips,orga]
 image: binario.png

@@ -2,6 +2,7 @@
 layout: post
 title:  "MIPS: datapath"
 author: "Santiago Trini"
+subject: Organización de Computadoras
 categories: orga
 tags: [mips,datapath]
 image: datapath.png
@@ -111,4 +112,4 @@ Vimos como los distintos bloques de lógica secuencial y combinacional interact�
 
 El _datapath_ presentado aquí no es el que podemos encontrar en el _hardware_ real de una CPU MIPS de 32 bits. Es más una simplificación con fines educativos, aunque fiel en la idea general a una implementación real de MIPS.
 
-Quedan pendiente para los próximos artículos ver como diseñar una unidad de control para este _datapath_ y como aumentar el rendimiento de esta CPU usando la técnica de _pipelining_ que es prácticamente universal para cualquier procesador. 
+Quedan pendiente para los próximos artículos ver como diseñar una unidad de control para este _datapath_ y como aumentar el rendimiento de esta CPU usando la técnica de _pipelining_ que es prácticamente universal para cualquier procesador.

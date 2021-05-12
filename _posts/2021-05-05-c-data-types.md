@@ -2,6 +2,7 @@
 layout: post
 title:  "Tipos de datos en C"
 author: "Santiago Trini"
+subject: Algoritmos y Estructuras de Datos
 categories: c
 tags: [algo,c]
 image: data-types.png

@@ -2,6 +2,7 @@
 layout: post
 title:  "MIPS: branchs y jumps"
 author: "Santiago Trini"
+subject: Organización de Computadoras
 categories: orga
 tags: [mips,orga]
 image: branchs.png

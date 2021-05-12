@@ -2,6 +2,7 @@
 layout: post
 title:  "Hello postgre"
 author: "Santiago Trini"
+subject: Proyecto Informático I
 categories: sql
 tags: [js,sql,fullstack,postgre]
 image: postgre.png

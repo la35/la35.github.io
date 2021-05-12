@@ -2,6 +2,7 @@
 layout: post
 title:  "Introducción a MIPS"
 author: "Santiago Trini"
+subject: Organización de Computadoras
 categories: orga
 tags: [mips,orga]
 image: mips-cpu.png
