@@ -11,6 +11,12 @@ date:   2020-09-16 00:00:00 -0300
 
 Tercera parte de la introducción a _assembler_ de MIPS. Links de la [parte 1](https://la35.net/orga/mips-intro.html) y [parte 2](https://la35.net/orga/mips-branchs.html). Todo el código de los ejemplos disponible en [GitHub](https://github.com/santiagotrini/mips-funciones).
 
+# Contenidos
+{:.no_toc}
+
+1. Generated ToC
+{:toc}
+
 ## Algunas definiciones
 
 Una función o subrutina es un segmento de código distinto del código principal que puede ser invocado o llamado desde este último. Un ejemplo en C llamando a una función definida en el mismo archivo.

@@ -11,6 +11,12 @@ date:   2020-08-20 00:00:00 -0300
 
 Segunda parte de la introducción a _assembler_ de MIPS. La primera parte la pueden encontrar [aquí](https://la35.net/orga/mips-intro.html). Todo el código de los ejemplos disponible en [GitHub](https://github.com/santiagotrini/mips-branchs).
 
+# Contenidos
+{:.no_toc}
+
+1. Generated ToC
+{:toc}
+
 ## El infame GO TO
 
 Cuando programamos usando `if` o `while` en algún lenguaje de alto nivel como C o Python estamos adhiriendo a lo que se conoce como **programación estructurada**, un paradigma de programación surgido en los años '60.

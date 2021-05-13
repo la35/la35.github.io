@@ -13,6 +13,12 @@ En el último artículo vimos como funcionaban la ALU y los registros en la CPU 
 
 Ahora agregamos la pieza que falta, la unidad de control. Pueden ver la implementación de la misma en Logisim en la rama `control` [de este repo](https://github.com/santiagotrini/mips-datapath).
 
+# Contenidos
+{:.no_toc}
+
+1. Generated ToC
+{:toc}
+
 ## Señales de control
 
 Lo primero que hay que hacer es identificar las señales de control para el _datapath_ que describimos en el artículo anterior. Son en general líneas de 1 bit de ancho que le indican a las unidades funcionales como el archivo de registros o la ALU que operación realizar. Las resumo en la siguiente tabla.

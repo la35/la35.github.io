@@ -11,6 +11,12 @@ date:   2020-08-13 18:00:00 -0300
 
 Una introducción a la programación en _assembler_ de MIPS usando SPIM. Todo el código disponible en [GitHub](https://github.com/santiagotrini/mips-intro).
 
+# Contenidos
+{:.no_toc}
+
+1. Generated ToC
+{:toc}
+
 ## La arquitectura MIPS
 
 MIPS es una familia de microprocesadores que se remonta a 1985. Con arquitectura nos referimos al lenguaje máquina de un microprocesador, como puede ser x86, ARM o AVR. La arquitectura MIPS tiene versiones de 32 y 64 bits. Ambas versiones fueron evolucionando con el correr del tiempo, agregando o quitando instrucciones y características.

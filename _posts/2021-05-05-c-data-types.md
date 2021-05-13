@@ -30,6 +30,12 @@ Por último, el `bool` o booleano es un tipo de dato que se agregó en [C99](htt
 |`bool`  |$\\{ 0, 1 \\}$|`!` `&&` `||`      |`true` `false`       |
 |`char`  |caracteres    |                   |`'a'` `'4'` `'!'`    |
 
+# Contenidos
+{:.no_toc}
+
+1. Generated ToC
+{:toc}
+
 ## Algunas definiciones
 
 Antes de ver algunos programas de ejemplo conviene definir algunos términos técnicos que aplican a cualquier lenguaje de programación.

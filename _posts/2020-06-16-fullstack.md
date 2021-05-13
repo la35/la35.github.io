@@ -17,6 +17,12 @@ El único requisito es entender un poco de HTML, CSS y JS (un poquito nada más)
 
 La primera ya está disponible en [santiagotrini/express-hello-world](https://github.com/santiagotrini/express-hello-world).
 
+# Contenidos
+{:.no_toc}
+
+1. Generated ToC
+{:toc}
+
 ## Requisitos
 
 - Una compu preferentemente con Linux, pero también se puede hacer en Windows / macOS.

@@ -11,6 +11,12 @@ date:   2020-07-16 00:55:00 -0300
 
 Una API usando PostgreSQL como base de datos y NodeJS, todo desde Heroku. Todo el código disponible en [GitHub](https://github.com/santiagotrini/hello-postgre).
 
+# Contenidos
+{:.no_toc}
+
+1. Generated ToC
+{:toc}
+
 ## Qué vamos a hacer
 
 Una API (_application programming interface_) para comunicarnos con una base de datos de PostgreSQL. Prácticamente una copia de [hello-database](https://github.com/santiagotrini/hello-database).

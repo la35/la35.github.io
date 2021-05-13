@@ -19,6 +19,12 @@ Que todos los navegadores web modernos tengan un intérprete de JavaScript no no
 
 No hay que confundir Java con JavaScript, son dos lenguajes diferentes que lo único que tienen en común es el nombre y una sintaxis similar a C. La gente que inventó JavaScript lo hizo en un momento en el que Java se estaba haciendo muy conocido y se copiaron un poquito del nombre por razones de marketing.
 
+# Contenidos
+{:.no_toc}
+
+1. Generated ToC
+{:toc}
+
 ## Ejecutar código de JavaScript
 
 Para empezar necesitamos un lugar donde ejecutar código de JS. La manera más fácil es desde nuestro navegador (funciona en Chrome y Firefox seguro) presionando <kbd>F12</kbd>. Obtenemos un panel que son las herramientas para desarrolladores. En la pestaña "Console" podemos tipear código y ejecutarlo usando la tecla <kbd>Enter</kbd>. Probemos con el programa "Hello world" como manda la tradición.

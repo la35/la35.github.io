@@ -11,6 +11,12 @@ date:   2020-10-15 00:00:00 -0300
 
 Para una computadora la representación de un programa con una serie de números es la más natural. Para los humanos en cambio es mucho más cómodo trabajar con símbolos. El lenguaje ensamblador es una representación simbólica del lenguaje máquina, que siempre es numérico. En este artículo voy a explicar brevemente como la arquitectura MIPS codifica numéricamente las instrucciones que vimos cuando programamos en _assembler_.
 
+# Contenidos
+{:.no_toc}
+
+1. Generated ToC
+{:toc}
+
 ## Campos y formatos de instrucción
 
 Una instrucción en MIPS está formada por un conjunto de campos, cada uno con una función definida. En MIPS tenemos los siguientes campos.

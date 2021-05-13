@@ -17,6 +17,12 @@ Hay que aclarar que esta implementación del _datapath_ de MIPS ejecuta cada ins
 
 El circuito de Logisim de este _datapath_ simple pueden encontrarlo en [GitHub](https://github.com/santiagotrini/mips-datapath).
 
+# Contenidos
+{:.no_toc}
+
+1. Generated ToC
+{:toc}
+
 ## Unidades funcionales
 
 Para ilustrar el _datapath_ de MIPS vamos a concentrarnos en un subconjunto de las instrucciones. Nos interesan las siguientes instrucciones:
