@@ -505,3 +505,10 @@ th, td {
 .fa-rss-square:hover {
 	color: #ff6600;
 }
+
+/* custom css */
+/* image captions */
+img + em {
+  display: block;
+  text-align: center;
+}
