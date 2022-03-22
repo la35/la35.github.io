@@ -140,11 +140,15 @@ El motivo de esto es que estas bases son potencias de dos y eso nos permite una 
 Para pasar de binario a hexadecimal simplemente agrupamos cada 4 bits y reemplazamos por el dígito correspondiente en hexadecimal.
 Ejemplos:
 
+$$ \overbrace{1001}^{9}\ \overbrace{1100}^{\text{C}} $$
+
 $$ 0111\ 1101_2 = 7\text{D}_{16} $$
 
 $$ 1111\ 1000\ 1100_2 = \text{F}8\text{C}_{16} $$
 
 Para el octal procedemos de manera similar pero agrupando cada 3 bits.
+
+$$ \overbrace{011}^{3}\ \overbrace{111}^{\text{7}}\ \overbrace{110}^{\text{6}} $$
 
 $$ 0111\ 1101_2 = 175_{8} $$
 
@@ -158,7 +162,27 @@ Lo más común es encontrarnos con hexadecimal, por ejemplo, al representar colo
 
 1. Definir _bit_, _nibble_, _byte_, _word_, LSB, MSB y _endianness_.
 2. Dar una tabla con los números del 0 al 15 en decimal, binario y hexadecimal.
-3. Pasar a decimal los siguientes números: $327_8$, $10010110_2$, $\text{FDA}2$, $101100000110_2$. 
-4. Pasar a octal y hexadecimal: $110$, $11101$, $110011$, $11101000$, $10011010$.
-5. Pasar los siguientes colores en hexadecimal a `rgb(r, g, b)` donde `r`, `g` y `b` son números del 0 al 255: #AD8799, #EE810F, #FCD777.
+3. Pasar a decimal los siguientes números:
+- $327_8$
+- $10010110_2$
+- $\text{FDA}2_{16}$
+- $101100000110_2$
+4. Pasar a octal y hexadecimal:
+  - $110$
+  - $11101$
+  - $110011$
+  - $11101000$
+  - $10011010$
+5. Pasar los siguientes colores en hexadecimal a `rgb(r, g, b)` donde `r`, `g` y `b` son números del 0 al 255:
+ - #AD8799
+ - #EE810F
+ - #FCD777
 6. Dar el complemento a dos de los números del ejercicio 4.
+7. Dados $A = 1011\ 0111$, $B = 0111\ 1011$ y $C = 0010\ 0101$ resolver:
+  - $A\ \text{OR}\ B$
+  - $A + B$
+  - $\overline{A\ \text{AND}\ B}$
+  - $(B + C)\ \text{XOR}\ A $
+  - $A \oplus A$
+  - $CA + B$
+  - $B\ \text{OR}\ \overline{B}$
