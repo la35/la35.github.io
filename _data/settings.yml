@@ -11,6 +11,7 @@ menu:
 - {name: 'Archivo', path: 'menu', url: 'writing.html'}
 - {name: 'Materias', path: 'menu', url: 'subjects.html'}
 - {name: 'Programas', path: 'menu', url: 'programas.html'}
+- {name: 'Practicas', path: 'menu', url: 'practicas.html'}
 
 # Available social icons are powered by Font Awesome, so you can use any icon that they offer
 social:
