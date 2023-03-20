@@ -17,11 +17,11 @@ title: Practicas
   <p><a href="../assets/files/practicas/algo-p7.pdf">Práctica 7 - Search & sort</a></p>  
   <p><a href="../assets/files/practicas/algo-p8.pdf">Práctica 8 - ADTs</a></p>  
 </ul>
-
+-->
 <h3>Organización de Computadoras</h3>
 <ul class="posts">
   <p><a href="../assets/files/practicas/orga-p0.pdf">Práctica 0 - Introducción</a></p>  
-  <p><a href="../assets/files/practicas/orga-p1.pdf">Práctica 1 - Representación de la información</a></p>  
+<!--  <p><a href="../assets/files/practicas/orga-p1.pdf">Práctica 1 - Representación de la información</a></p>  
   <p><a href="../assets/files/practicas/orga-p2.pdf">Práctica 2 - Lógica digital</a></p>  
   <p><a href="../assets/files/practicas/orga-p3.pdf">Práctica 3 - Lenguaje máquina</a></p>  
   <p><a href="../assets/files/practicas/orga-p4.pdf">Práctica 4 - La CPU</a></p>  
