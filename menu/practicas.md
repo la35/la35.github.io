@@ -7,7 +7,7 @@ title: Prácticas
 
 [Práctica 0 - Hola mundo](../assets/files/practicas/algo-p0.pdf)
 
-<!-- [Práctica 1 - Tipos de datos](../assets/files/practicas/algo-p1.pdf) -->
+[Práctica 1 - Tipos de datos](../assets/files/practicas/algo-p1.pdf)
 
 <!-- [Práctica 2 - Funciones I](../assets/files/practicas/algo-p2.pdf) -->
 
@@ -47,7 +47,7 @@ title: Prácticas
 
 [Práctica 0 - Introducción](../assets/files/practicas/orga-p0.pdf)
 
-<!-- [Práctica 1 - Representación de la información](../assets/files/practicas/orga-p1.pdf) -->
+[Práctica 1 - Representación de la información](../assets/files/practicas/orga-p1.pdf)
 
 <!-- [Práctica 2 - Lógica digital](../assets/files/practicas-orga-p2.pdf) -->
 
