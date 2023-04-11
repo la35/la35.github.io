@@ -27,7 +27,7 @@ title: Prácticas
 
 [Práctica 0 - Introducción](../assets/files/practicas/db-p0.pdf)
 
-<!-- [Práctica 1 - Modelo ER](../assets/files/practicas/db-p1.pdf) -->
+[Práctica 1 - Modelo ER](../assets/files/practicas/db-p1.pdf)
 
 <!-- [Práctica 2 - Modelo relacional](../assets/files/practicas/db-p2.pdf) -->
 
