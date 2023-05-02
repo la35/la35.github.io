@@ -9,7 +9,7 @@ title: Prácticas
 
 [Práctica 1 - Tipos de datos](../assets/files/practicas/algo-p1.pdf)
 
-<!-- [Práctica 2 - Funciones I](../assets/files/practicas/algo-p2.pdf) -->
+[Práctica 2 - Funciones I](../assets/files/practicas/algo-p2.pdf)
 
 <!-- [Práctica 3 - Condicionales y loops](../assets/files/practicas/algo-p3.pdf) -->
 
