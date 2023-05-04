@@ -49,7 +49,7 @@ title: Prácticas
 
 [Práctica 1 - Representación de la información](../assets/files/practicas/orga-p1.pdf)
 
-<!-- [Práctica 2 - Lógica digital](../assets/files/practicas-orga-p2.pdf) -->
+[Práctica 2 - Lógica digital](../assets/files/practicas/orga-p2.pdf)
 
 <!-- [Práctica 3 - Lenguaje máquina](../assets/files/practicas-orga-p3.pdf) -->
 
