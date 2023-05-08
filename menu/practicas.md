@@ -66,3 +66,5 @@ title: Prácticas
 [Práctica 1 - La CLI](../assets/files/practicas/proyecto-p1.pdf)
 
 [Práctica 2 - Git y GitHub](../assets/files/practicas/proyecto-p2.pdf)
+
+[Práctica 3 - HTML & CSS](../assets/files/practicas/proyecto-p3.pdf)
