@@ -11,7 +11,7 @@ title: Prácticas
 
 [Práctica 2 - Funciones I](../assets/files/practicas/algo-p2.pdf)
 
-<!-- [Práctica 3 - Condicionales y loops](../assets/files/practicas/algo-p3.pdf) -->
+[Práctica 3 - Condicionales y loops](../assets/files/practicas/algo-p3.pdf)
 
 <!-- [Práctica 4 - Arrays](../assets/files/practicas/algo-p4.pdf) -->
 
@@ -29,7 +29,7 @@ title: Prácticas
 
 [Práctica 1 - Modelo ER](../assets/files/practicas/db-p1.pdf)
 
-<!-- [Práctica 2 - Modelo relacional](../assets/files/practicas/db-p2.pdf) -->
+[Práctica 2 - Modelo relacional](../assets/files/practicas/db-p2.pdf)
 
 <!-- [Práctica 3 - DDL](../assets/files/practicas/db-p3.pdf) -->
 
