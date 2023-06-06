@@ -68,3 +68,5 @@ title: Prácticas
 [Práctica 2 - Git y GitHub](../assets/files/practicas/proyecto-p2.pdf)
 
 [Práctica 3 - HTML & CSS](../assets/files/practicas/proyecto-p3.pdf)
+
+[Práctica 4 - JavaScript](../assets/files/practicas/proyecto-p4.pdf)
