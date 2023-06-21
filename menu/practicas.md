@@ -31,7 +31,7 @@ title: Prácticas
 
 [Práctica 2 - Modelo relacional](../assets/files/practicas/db-p2.pdf)
 
-<!-- [Práctica 3 - DDL](../assets/files/practicas/db-p3.pdf) -->
+[Práctica 3 - DDL](../assets/files/practicas/db-p3.pdf)
 
 <!-- [Práctica 4 - Consultas](../assets/files/practicas/db-p4.pdf) -->
 
