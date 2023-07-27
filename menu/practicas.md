@@ -51,7 +51,7 @@ title: Prácticas
 
 [Práctica 2 - Lógica digital](../assets/files/practicas/orga-p2.pdf)
 
-<!-- [Práctica 3 - Lenguaje máquina](../assets/files/practicas-orga-p3.pdf) -->
+[Práctica 3 - Lenguaje máquina](../assets/files/practicas/orga-p3.pdf)
 
 <!-- [Práctica 4 - La CPU](../assets/files/practicas-orga-p4.pdf) -->
 
