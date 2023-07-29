@@ -33,7 +33,7 @@ title: Prácticas
 
 [Práctica 3 - DDL](../assets/files/practicas/db-p3.pdf)
 
-[Práctica 4 - Consultas](../assets/files/practicas/db-p4.pdf)
+[Práctica 4 - Queries](../assets/files/practicas/db-p4.pdf)
 
 <!-- [Práctica 5 - ABMs](../assets/files/practicas/db-p5.pdf) -->
 
