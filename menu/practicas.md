@@ -13,7 +13,7 @@ title: Prácticas
 
 [Práctica 3 - Condicionales y loops](../assets/files/practicas/algo-p3.pdf)
 
-<!-- [Práctica 4 - Arrays](../assets/files/practicas/algo-p4.pdf) -->
+[Práctica 4 - Arrays](../assets/files/practicas/algo-p4.pdf)
 
 <!-- [Práctica 5 - I/O](../assets/files/practicas/algo-p5.pdf) -->
 
