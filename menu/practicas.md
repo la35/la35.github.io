@@ -70,3 +70,5 @@ title: Prácticas
 [Práctica 3 - HTML & CSS](../assets/files/practicas/proyecto-p3.pdf)
 
 [Práctica 4 - JavaScript](../assets/files/practicas/proyecto-p4.pdf)
+
+[Práctica 5 - React](../assets/files/practicas/proyecto-p5.pdf)
