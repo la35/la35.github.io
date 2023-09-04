@@ -35,7 +35,7 @@ title: Prácticas
 
 [Práctica 4 - Queries](../assets/files/practicas/db-p4.pdf)
 
-<!-- [Práctica 5 - ABMs](../assets/files/practicas/db-p5.pdf) -->
+[Práctica 5 - ABMs](../assets/files/practicas/db-p5.pdf)
 
 <!-- [Práctica 6 - Joins](../assets/files/practicas/db-p6.pdf) -->
 
