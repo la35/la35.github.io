@@ -53,13 +53,13 @@ title: Prácticas
 
 [Práctica 3 - Lenguaje máquina](../assets/files/practicas/orga-p3.pdf)
 
-<!-- [Práctica 4 - La CPU](../assets/files/practicas-orga-p4.pdf) -->
+[Práctica 4 - La CPU](../assets/files/practicas/orga-p4.pdf)
 
-<!-- [Práctica 5 - Memoria](../assets/files/practicas-orga-p5.pdf) -->
+<!-- [Práctica 5 - Memoria](../assets/files/practicas/orga-p5.pdf) -->
 
-<!-- [Práctica 6 - I/O](../assets/files/practicas-orga-p6.pdf) -->
+<!-- [Práctica 6 - I/O](../assets/files/practicas/orga-p6.pdf) -->
 
-<!-- [Práctica 7 - Software de sistema](../assets/files/practicas-orga-p7.pdf) -->
+<!-- [Práctica 7 - Software de sistema](../assets/files/practicas/orga-p7.pdf) -->
 
 ### Proyecto Informático I
 
