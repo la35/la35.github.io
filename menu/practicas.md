@@ -17,7 +17,7 @@ title: Prácticas
 
 [Práctica 5 - I/O](../assets/files/practicas/algo-p5.pdf)
 
-<!-- [Práctica 6 - Funciones II](../assets/files/practicas/algo-p6.pdf) -->
+[Práctica 6 - Funciones II](../assets/files/practicas/algo-p6.pdf)
 
 <!-- [Práctica 7 - Search & sort](../assets/files/practicas/algo-p7.pdf) -->
 
