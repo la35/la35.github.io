@@ -39,7 +39,7 @@ title: Prácticas
 
 [Práctica 6 - Joins](../assets/files/practicas/db-p6.pdf)
 
-<!-- [Práctica 7 - Subqueries](../assets/files/practicas/db-p7.pdf) -->
+[Práctica 7 - Subqueries](../assets/files/practicas/db-p7.pdf)
 
 <!-- [Práctica 8 - Normalización](../assets/files/practicas/db-p8.pdf) -->
 
