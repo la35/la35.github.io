@@ -72,3 +72,5 @@ title: Prácticas
 [Práctica 4 - JavaScript](../assets/files/practicas/proyecto-p4.pdf)
 
 [Práctica 5 - React](../assets/files/practicas/proyecto-p5.pdf)
+
+[Práctica 6 - Backend](../assets/files/practicas/proyecto-p6.pdf)
