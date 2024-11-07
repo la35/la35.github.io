@@ -19,7 +19,7 @@ title: Prácticas
 
 [Práctica 6 - Funciones II](../assets/files/practicas/algo-p6.pdf)
 
-<!-- [Práctica 7 - Search & sort](../assets/files/practicas/algo-p7.pdf) -->
+[Práctica 7 - Search & sort](../assets/files/practicas/algo-p7.pdf) 
 
 <!-- [Práctica 8 - ADTs](../assets/files/practicas/algo-p8.pdf) -->
 
