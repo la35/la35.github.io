@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cuanto falta</title>
+  <style>
+    body {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      font-family: sans-serif;
+      text-align: center;
+      height: 100vh;
+    }
+
+    hr {
+      width: 90%;
+    }
+
+    form > * {
+      font-size: 1.5em;
+    }
+
+    .nota {
+      border: 1px solid black;
+      padding: 5px;
+      box-shadow: 2px 2px 2px black;
+    }
+
+    .container {
+      border: 1px solid black;
+      padding: 10px;
+      margin-top: 10px;
+      min-width: 98%;
+      min-height: 200px;
+      display: grid;
+      grid-template: repeat(3, 1fr) / repeat(5, 1fr);
+      gap: 10px;
+    }
+  </style>
+</head>
+<body>
+  <h1 id="falta"></h1>
+</body>
+<script>
+function calcularCuantoFalta(timerId) {
+  // DEBUG: console.log('ejecutando funcion...');
+  // el h1 que quiero cambiarle el texto
+  let h1 = document.querySelector('#falta');
+  // crea un objeto fecha con la fecha y hora actual
+  let now = new Date(); 
+  // crea un objeto fecha con la fecha '2025-07-18 18:00:00'
+  let targetDate = new Date('2026-07-17 12:10:00');
+  let diff = targetDate - now;
+  if (diff <= 0) {
+    h1.textContent = 'VACACIONES!!!';
+    clearInterval(timerId);
+    return; // sali de la funcion
+  }
+  // diff es la resta de las 2 fechas en milisegundos
+  // haciendo cuentas para pasar de ms a dias, horas
+  // minutos, segundos...
+  let w = Math.floor(diff / (1000*60*60*24*7));
+  diff  %= (1000*60*60*24*7);
+  let d  = Math.floor(diff / (1000*60*60*24));
+  diff  %= (1000*60*60*24);
+  let h  = Math.floor(diff / (1000*60*60));
+  diff  %= (1000*60*60);
+  let m  = Math.floor(diff / (1000*60));
+  diff  %= (1000*60);
+  let s  = Math.floor(diff / 1000);   
+  // DEBUG: console.log(d,h,m,s);
+  h1.textContent = `Faltan ${w} semana${w != 1 ? 's' : ''}, ${d} dia${d != 1 ? 's' : ''}, ${h} hora${h != 1 ? 's' : ''}, ${m} minuto${m != 1 ? 's' : ''} y ${s} segundo${s != 1 ? 's' : ''} para las VACACIONES ☹️`;
+}
+// uso una funcion anonima como wrapper de calcularCuantoFalta
+let timerId = setInterval(() => {
+  calcularCuantoFalta(timerId);
+}, 1000);
+
+
+</script>
+</html>
